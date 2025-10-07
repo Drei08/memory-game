@@ -16,7 +16,8 @@
 }
 
 .login__hearder img{
-  width: 160px;  
+  width: 90px;
+  margin-top: -40px;  
 }
 
 .login__hearder h1{

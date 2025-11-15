@@ -1,47 +1,70 @@
-.login__form{
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
   height: 100vh;
+  background-color: #060606;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.login__form{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 20px;
 }
+
 
 .login__hearder{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 35px;
+  gap: 10px;
 
 }
 
 .login__hearder img{
-  width: 90px;
-  margin-top: -40px;  
+  width: 200px;
+  margin-top: -80px;
 }
 
 .login__hearder h1{
-  color: #333;
-  font-size: 1.5rem;
+  margin-top: -20px;
+  color: #1ae82f;
+  font-size: 2rem;
 }
 
 .login__input{
+  margin-top: 10px;
   width: 50%;
-  max-width: 315px;
+  max-width: 215px;
   border: 2px solid #1ae82f;
   box-shadow: 0 0 4px rgba(58, 248, 5, 0.6);
   border-radius: 6px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   outline: none;
 }
 
 .login__button{
+  margin-top: -5px;
   width: 50%;
+  height: 50px;
   max-width: 100px;
   color: #565656;
   background-color: #1ae82f;
+  font-size: 1.3rem;
   padding: 8px;
   border: 2px solid #1ae82f8e;
   border-radius: 8px;
@@ -50,6 +73,7 @@
 
 .login__button:disabled{
   background-color: #fff;
+  font-size: 1.3rem;
   color: #aaa;
   cursor: auto;
   border: 2px solid #aaa;

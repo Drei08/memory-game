@@ -1,14 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #060606;
+  overflow: hidden;
+}
+
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  min-height: 100vh;
-  background-size: cover;
   justify-content: center;
-  padding: 20px 20px 50px;
+  width: 100%;
+  max-width: 500px;
+  min-height: 100vh;
+  margin: auto;
+  padding: 20px 50px;
   background-color: #060606;
 }
+
 
 header{
   color: #fff;
@@ -19,18 +37,41 @@ header{
   border-radius: 10px;
   width: 100%;
   max-width: 800px;
-  padding: 20px;
+  padding: 10px;
   margin: 0 0 30px;
 }
 
 h2{
   color: #fff;
   margin: 20px;
+  font-size: 1rem;
 }
 
-.rick img{
-  margin-top: -10000px;
-  margin-left: 400px
+.player{
+  font-size: 0.9rem;
+}
+
+.tempo{
+  font-size: 0.9rem;
+}
+
+.timer{
+  font-size: 0.7rem;
+}
+
+.ricke img, .mortye img {
+  position: fixed;
+  bottom: 25px;
+}
+
+.ricke img {
+  width: 350px;
+  right: 300px;
+}
+
+.mortye img {
+  width: 80px;
+  left: 340px;
 }
 
 .grid {

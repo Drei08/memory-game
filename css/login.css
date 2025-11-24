@@ -11,9 +11,6 @@ body{
   width: 100vw;
   height: 100vh;
   background-color: #060606;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .logo img{
@@ -29,7 +26,6 @@ body{
   justify-content: center;
   gap: 20px;
 }
-
 
 .login__hearder{
   display: flex;
@@ -83,4 +79,32 @@ body{
   color: #aaa;
   cursor: auto;
   border: 2px solid #aaa;
+}
+
+@media (max-width: 768px) {
+
+  body {
+    padding: 20px;
+  }
+
+  .logo img {
+    width: 220px;
+    margin-top: -20px;
+  }
+
+  .login__hearder h1 {
+    font-size: 1.1rem;
+  }
+
+  .login__input {
+    width: 70%;
+    max-width: 220px;
+    font-size: 0.9rem;
+  }
+
+  .login__button {
+    width: 50%;
+    height: 35px;
+    font-size: 0.9rem;
+  }
 }
